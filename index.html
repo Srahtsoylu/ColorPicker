@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Renk Seçici</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="contents">
+      <div class="input">
+        <input type="color" class="renk" />
+        <input type="text" class="renkKodu" />
+      </div>
+      <div class="colorInfo">
+        <h1>HEX CODE</h1>
+        <div class="infoBtn">
+        <p class="colorCode" id="hex">HEX</p>
+        <button class="copy" onclick="copyBoard(this)">Copy</button>
+    </div>
+      </div>
+
+      <div class="colorInfo">
+        <h1>RGB CODE</h1>
+        <div class="infoBtn">
+        <p class="colorRgb colorCode" id="rgb">RGB</p>
+        <button class="copy" onclick="copyBoard(this)" >Copy</button>
+    </div>
+      </div>
+    </div>
+      <div class="bgColor"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
